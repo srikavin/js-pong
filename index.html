@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pong</title>
+    <link href="index.css" rel="stylesheet">
+</head>
+<body>
+<div id="container">
+    <canvas autofocus="autofocus" id="game" tabindex='1'>
+        <h1 class="text">
+            Your browser does not support canvas!
+        </h1>
+    </canvas>
+</div>
+<br>
+<div id="settings">
+    <label class="text" for="speed"><b>Speed Multiplier:</b> <span id="speedValue">1.1</span>x</label><br>
+    <input id="speed" max="5" min="1" step="0.1" type="range" value="1.1">
+    <br>
+    <label class="text" for="difficulty"><b>AI Level:</b> <span id="aiLevel">3</span></label><br>
+    <input id="difficulty" max="10" min="1" step="1" type="range" value="3">
+    <br>
+</div>
+<script src="main.js"></script>
+</body>
+</html>
